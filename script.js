@@ -14,16 +14,16 @@ function displayWorld(){
     var output = '';
 
     for(var i=0; i<world.length; i++){
-        output += "<\ndiv class='row'>";
+        output += "<div class='row'>";
         for(var j=0; j<world[i].length; j++){
             if(world[i][j] == 2)
-                output += "<\n\tdiv class='brick'></div>";
+                output += "<div class='brick'></div>";
             else if(world[i][j] == 1)
-                output += "<\n\tdiv class='coin'></div>";
+                output += "<div class='coin'></div>";
             if(world[i][j] == 0) 
-                output += "<\n\tdiv class='empty'></div>";
+                output += "<div class='empty'></div>";
         }
-        output += "<\n/div>";
+        output += "</div>";
     }
     console.log(output);
     document.getElementById('world').innerHTML = output; 
